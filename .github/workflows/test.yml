@@ -1,16 +1,7 @@
-on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-    branches:
-      - '**'
-    paths-ignore:
-      - 'multimodal/**'
-  push:
-    branches:
-      - 'main'
-    paths-ignore:
-      - 'multimodal/**'
 
+on:
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   id-token: write
   contents: read

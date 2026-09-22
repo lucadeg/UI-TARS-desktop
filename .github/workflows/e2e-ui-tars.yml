@@ -1,15 +1,7 @@
-on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-    paths:
-      - 'packages/common/**'
-      - 'packages/ui-tars/**'
-      - '.github/workflows/e2e-ui-tars.yml'
-      - 'apps/ui-tars/**'
-  push:
-    branches:
-      - 'main'
 
+on:
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 name: UI-TARS E2E Test
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}-test

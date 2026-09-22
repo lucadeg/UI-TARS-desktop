@@ -1,12 +1,7 @@
-on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-    branches:
-      - '**'
-    paths:
-      - 'packages/agent-infra/mcp-*/**'
-      - '.github/workflows/benchmark.yml'
 
+on:
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   id-token: write
   contents: read

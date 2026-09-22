@@ -1,12 +1,7 @@
-on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-    branches:
-      - '**'
-    paths:
-      - 'multimodal/**'
-      - '.github/workflows/agent_tars_build.yml'
 
+on:
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   id-token: write
   contents: read
